@@ -1,0 +1,9 @@
+body{
+    background-image: url(Bilder/ALLROUNDER+.jpg);
+    background-size: cover;
+}
+
+main{
+    margin-left: 12%;
+    margin-right: 12%;
+}

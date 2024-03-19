@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="icon" type="image/x-icon" href="Icons/Icon.png">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Averia Libre'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Averia Serif Libre'>
+    <link href='https://fonts.googleapis.com/css?family=Young Serif' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>BIOS/UEFI</title>
+</head>
+<body>
+    <header>
+    <div class="nav">
+        <div><img onclick="Bischkala()" class="Logo" src="Icons/ARBURG.png"></div>
+        <div class="Auswahl"><a href="Treiber.html">Treiber</a></div>
+        <div class="Auswahl"><a href="Betriebssystem.html">Betriebssystem</a></div>
+        <div class="Auswahl">BIOS/UEFI</div>
+        <div class="Auswahl"><a href="Hardware.html">Hardware</a></div>
+        <div class="Auswahl"><a href="Index.html">Home</a></div>
+    </div>
+    </header>
+    
+    <main>
+        <h1>Für was werden BIOS/UEFI benötigt?</h1>
+        <p>Über das BIOS/UEFI wird ein Kernproblem von Computern gelöst: Denn jede Software muss zunächst in den Hauptspeicher eines Rechners geladen werden, um zu starten. Für diesen Vorgang wird allerdings ebenfalls Software benötigt, die dem System mitteilt, wo jenes Programm – etwa das Betriebssystem – zu finden ist. Diese Aufgabe übernimmt das BIOS/UEFI als Firmware. Gleichzeitig dient es als Vermittler zwischen CPU und Software. Das BIOS/UEFI bildet eine Abstraktionsebene, den sogenannten Abstraction Layer (HAL), sodass eine Software die Details der Hardware nicht kennen muss, sondern sie standardisiert ansprechen kann.</p>
+        <p>Das BIOS/UEFI stellt die Grundfunktionen eines Computers bereit und prüft nach jedem Start des Rechners, ob die wichtigsten Teile wie Speicher, CPU und andere Hardware-Komponenten funktionsfähig sind. Dieser Test wird als Power on Self Test (POST) bezeichnet.</p>
+        <h1>Unterschied zwischen dem BIOS und dem UEFI</h1>
+        <p>Das BIOS wurde seit den 1980er-Jahren in seinem Kern kaum verändert und ist deshalb immer weniger den Anforderungen moderner Hardware gewachsen. Doch es wurden längst Nachfolgetechnologien entwickelt. In den 1990er-Jahren entstand zunächst das Extensible Firmware Interface (EFI). Ab 2005 erfolgte eine Weiterentwicklung, die Unified Extensible Firmware Interface (UEFI) getauft wurde. Seit den 2010er-Jahren hat sich UEFI als Standard in 64-Bit-Rechnern etabliert. Es bietet mehr und verbesserte Funktionen und eine komfortablere Usability als das ursprüngliche BIOS.</p>
+        <p>Das UEFI verfügt über eine grafische Benutzeroberfläche, kann mit Maus oder Tastatur bedient werden und auch ohne Start des Betriebssystems auf Netzwerkkomponenten und das Internet zugreifen. Ein wichtiges Unterscheidungsmerkmal zum früheren BIOS: UEFI nutzt einen Secure Bootloader, d. h. es verhindert das Starten von nicht zugelassenen Betriebssystemen und unerwünschter Software und verbessert damit den Schutz vor Cyberangriffen.</p>
+        <h1>Startvorgang mittels BIOS (Basic Input/Output System)</h1>
+        <p>Drücken Sie die vom Hersteller vorgegebene Taste, um das Firmwaremenü zu öffnen. Häufig verwendete Tasten sind ESC, ENTF, F1, F2, F10, F11 oder F12. Wählen Sie im Menü des Startgeräts den Befehl aus, mit dem sowohl der Firmwaremodus als auch das Gerät identifiziert werden. Wählen Sie beispielsweise UEFI: USB-Laufwerk oder BIOS: Netzwerk/LAN aus .Führen Sie in den Firmwaremenüs einen Start auf dem Laufwerk oder im Netzwerk aus, während Sie sich im UEFI- oder BIOS-Modus befinden.</p>
+        <h1>Startvorgang mittels UEFI (Unified Extensible Firmware Interface)</h1>
+        <p> UEFI ist eine Firmware-Schnittstelle, die das BIOS ersetzt und es ermöglicht, das Betriebssystem zu starten. Um den Startvorgang im UEFI-Modus durchzuführen, müssen Sie zunächst das UEFI-Menü öffnen. Hierfür gibt es verschiedene Möglichkeiten, je nach Hersteller des Mainboards und Betriebssystems. Eine Möglichkeit besteht darin, den Computer neu zu starten und während des Startvorgangs die entsprechende Taste mehrmals zu drücken, um das UEFI-Menü aufzurufen. Die Taste kann je nach Hersteller variieren, aber es ist oft die Entfernen-Taste oder eine der F-Tasten wie F2 oder F12. Eine andere Möglichkeit besteht darin, das UEFI-Menü über die Einstellungen von Windows 10 oder Windows 11 aufzurufen. Öffnen Sie die Einstellungen und klicken Sie auf “Update und Sicherheit”. Klicken Sie dann auf “Wiederherstellung” und wählen Sie “Erweiterter Start”. Klicken Sie auf “Jetzt neu starten”, um das UEFI-Menü aufzurufen.</p>
+    </main>
+
+    <footer>
+        <h6>
+            <a target="_blank"  href="https://www.arburg.com/de/de/datenschutz/">Datenschutz </a>
+            <a target="_blank"  href="https://www.arburg.com/de/de/impressum/">Impressum </a>
+            <a target="_blank"  href="https://www.arburg.com/de/de/kontakt/">Kontakt</a>
+        </h6>
+    </footer>
+</body>
+</html>

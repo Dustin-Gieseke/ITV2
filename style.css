@@ -1,0 +1,113 @@
+/* font-family: 'Averia Libre'; */
+/* font-family: 'Averia Serif Libre'; */
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    font-family: 'Arial Black';
+    font-size: 20px;
+}
+/* Navigationsleiste */
+.Logo{
+    float: left;
+    height: 40px;
+    margin: 5px;
+}
+.nav{
+    color: #041319;
+    background-color: #3c9;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.Auswahl{
+    /* float: right; */
+    float:inline-end;
+    margin: 11px;
+}
+/* Verlinkungen */
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(34, 134, 101);
+}
+a:active{
+    color: #3c9;
+}
+/* Darkmode */
+.dark-mode{
+    background-color: #041319;
+    color: white;
+}
+/* Main */
+main{
+    top: 50px;
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h1{
+    font-family: 'Arial Black';
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+p{
+    font-family: '72 Light';
+    font-size: 17px;
+    text-align: justify;
+}
+.TextBild{
+    float: right;
+    margin-left: 2%;
+    height: 200px;
+}
+.Gruppe{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Sprudel{
+    height: 200px;
+}
+/* Quatsch */
+.Jamie{
+    margin-top: 25%;
+    text-align: left;
+    color: white;
+}
+.Jamie h1{
+    font-size: 50px; 
+}
+/* .W{
+    font-family: 'Arial Black';
+    font-size: 72px;
+} */
+/* Footer */
+footer{
+    margin-top: 5%;
+    height: 17px;
+    width: 100%;
+    background-color:#041319;
+}
+footer#kurz{
+    bottom: 0;
+    position: absolute;
+}
+h6{
+    font-family: 'Arial Black';
+    color: rgb(34, 134, 101);
+    float: right;
+    margin: 0;
+    margin-right: 10px;
+}
+::selection {
+    /* color: white; */
+    background: rgb(34, 134, 101);
+  
+}

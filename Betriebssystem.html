@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="icon" type="image/x-icon" href="Icons/Icon.png">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Averia Libre'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Averia Serif Libre'>
+    <link href='https://fonts.googleapis.com/css?family=Young Serif' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <title>Betriebssystem</title>
+</head>
+<body>
+    <header>
+    <div class="nav">
+        <div><img onclick="Bischkala()" class="Logo" src="Icons/ARBURG.png"></div>
+        <div class="Auswahl"><a href="Treiber.html">Treiber</a></div>
+        <div class="Auswahl">Betriebssystem</div>
+        <div class="Auswahl"><a href="BiosUefi.html">BIOS/UEFI</a></div>
+        <div class="Auswahl"><a href="Hardware.html">Hardware</a></div>
+        <div class="Auswahl"><a href="Index.html">Home</a></div>
+    </div>
+    </header>
+
+    <main>
+        <h1>Was versteht man unter einem Betriebssystem?</h1>
+        <img class="TextBild" src="Bilder/BS.png" alt="BS Struktur">
+            <p>
+                Als Kurzformen werden BS (Betriebssystem) und OS (Operating System) verwendet. Ein Betriebssystem verwaltet das Zusammenspiel der Hardware- und Software-Komponenten eines Computers, sodass dieser mit einer benutzerfreundlichen Oberfläche verwendet werden kann. Das Betriebssystem ist dabei die Schnittstelle zwischen dem Nutzer, der einen Befehl in den Computer eingeben möchte, und den Bestandteilen eines Computers, die den Befehl umsetzen. Es ist daher für die Funktionstüchtigkeit eines Computers unverzichtbar.
+            </p>
+        <h1>Was sind die Aufgaben eines Betriebssystems?</h1>
+            <p>
+                <b>Benutzerkommunikation:</b> Das Betriebssystem ermöglicht die Interaktion zwischen dem Benutzer und dem Computer. Es stellt eine Benutzeroberfläche bereit, über die Befehle eingegeben und Ergebnisse angezeigt werden können.
+                <br><br>
+                <b>Programmverwaltung:</b> Das Betriebssystem ist verantwortlich für das Laden, Ausführen, Unterbrechen und Beenden von Programmen. Es stellt sicher, dass jedes Programm die Ressourcen erhält, die es benötigt, und dass Programme nicht in Konflikt miteinander geraten.
+                <br><br>
+                <b>Prozessorverwaltung:</b> Das Betriebssystem verwaltet die Prozessorzeit und stellt sicher, dass alle laufenden Prozesse angemessen bedient werden.
+                <br><br>
+                <b>Speicherverwaltung:</b> Das Betriebssystem ist verantwortlich für die Verwaltung des internen Speicherplatzes. Es weist jedem Programm einen bestimmten Speicherbereich zu und sorgt dafür, dass Programme nicht in den Speicherbereich anderer Programme eingreifen.
+                <br><br>
+                <b>Geräteverwaltung:</b> Das Betriebssystem verwaltet und betreibt die an den Computer angeschlossenen Geräte. Es lädt die entsprechenden Treiber und stellt sicher, dass die Geräte ordnungsgemäß funktionieren.
+                <br><br>
+                <b>Schutzfunktionen:</b> Das Betriebssystem bietet Schutzfunktionen, um die Sicherheit und Integrität des Systems zu gewährleisten. Dazu gehören Zugriffsbeschränkungen und andere Sicherheitsmaßnahmen.
+                <br><br>
+                Diese Aufgaben ermöglichen es dem Betriebssystem, als Vermittler zwischen der Hardware des Computers und den Anwendungen zu fungieren, die auf dem Computer ausgeführt werden. Es stellt sicher, dass der Computer effizient und sicher arbeitet.
+            </p>
+        <!-- <h1>Aufbau von Betriebssystemen</h1>
+            <img class="TextBild" src="Bilder/BS Struktur.gif" alt="BS Struktur">
+            <p>
+                Hardware Je nach Designkonzept wird Programmen der direkte Hardwarezugriff erlaubt oder über zusätzliche Schichten gestattet. Bei direktem Zugriff ergeben sich Performance Vorteile, über zusätzliche Schichten wird die Performance im Gegensatz etwas vermindert.
+                <br><br>
+                <b>Schicht 1: HAL (Hardware Abstraction Layer)</b> Die HAL ermöglicht den Einsatz auf einer Hardwareplattform die speziell auf eine Prozessor Architektur ausgelegt ist. Dazu gehören etwa die x86, Alpha, PowerPC oder Sparc Architektur. Steht die Portierbarkeit des Betriebssystems für andere Plattformen im Vordergrund, spielt die HAL eine zentrale Rolle für die Portierbarkeit.
+                <br><br>
+                <b>Schicht 2: Dateisystem, Treiber</b> Wichtige Aufgaben des Betriebssystem sind die Darstellung eines bis mehrerer Dateisysteme, die über entsprechende Treiber virtuell realisierbar sind. Zusätzliche Funktionen wie Verschlüsselung oder Komprimierung gehören auch dazu. Treiber für Standard Hardware wie Tastatur, LPT oder COM Schnittstellen werden rudimentär direkt vom Betriebssystem unterstützt, Beispiel sind DOS Betriebssysteme. Moderne Betriebssysteme bringen Standard Treiber für die meisten Hardwarekomponenten gleich mit. Für erweiterte Funktionen und optimale Leistung stellen die Hersteller eigene Treiber für ihre Hardware bereit.
+                <br><br>
+                <b>Schicht 3: Management</b> Die Managementschicht sorgt für den reibungslosen Ablauf der Systemprozesse durch kooperatives, präemptives oder echtzeit Multitasking. Je nach Priorität teilt das Betriebssystem dem Prozess CPU-Zeit, Speicher und I/O-Zugriffe zu.
+                <br><br>
+                <b>Schicht 4: Systemschnittstelle (Kernel)</b> Die Systemschnittstelle kapselt den Betriebssystemkern von der API ab, häufig dient sie auch als Trennmarke des CPU Modus vom privilegierten Ring 0 des Kernel.
+                <br><br>
+                <b>Schicht 5: API (Application Program Interface)</b> Über Softwareschnittstellen wie die Win32 API verwenden Programme für sie freigegebene Betriebssystemfunktionen etwa den Kopieren oder Öffnen Dialog für Dateien. Diese werden über einheitliche Anwendungsbefehle mit Parametern allen Programmen einheitlich zur Verfügung gestellt. Beispiel hierfür sind auch DFÜ Dienste.
+                <br><br>
+                Bibliotheken Bibliotheken stellen dem Betriebssystem und Anwendungsprogrammen fertige Programmteile zur Verfügung, die den Zugang für verschiedene Funktionen vereinfachen. Durch Bibliotheken (.dll, .OCX, ...) greifen Entwickler vereinfacht auf häufig benötigte Funktionen zurück ohne diese selbst für die Anwendung neu erfinden zu müssen.
+                Anwendungen Anwendungsprogramme nutzen die vom Betriebssystem zugeteilten Ressourcen und Gerätezeit. Über entsprechende Eingabe- und Ausgabe-Geräte interagiert der Benutzer mit dem Computer.</p> -->
+        <h1>Welche Betriebssysteme gibt es?</h1>
+        <div class="Gruppe">
+            <img class="Sprudel" src="Bilder/Windows.png" alt="Windows">
+            <img class="Sprudel" src="Bilder/Linux.png" alt="Linux">
+            <img class="Sprudel" src="Bilder/macOS.png" alt="macOS">
+            <img class="Sprudel" src="Bilder/Android.png" alt="Android">
+        </div>
+    </main>
+
+    <footer>
+        <h6>
+            <a target="_blank"  target="_blank"  href="https://www.arburg.com/de/de/datenschutz/">Datenschutz </a>
+            <a target="_blank"  href="https://www.arburg.com/de/de/impressum/">Impressum </a>
+            <a target="_blank"  href="https://www.arburg.com/de/de/kontakt/">Kontakt</a>
+        </h6>
+    </footer>
+</body>
+</html>
